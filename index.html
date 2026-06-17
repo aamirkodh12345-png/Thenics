@@ -10,165 +10,36 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- LOADER -->
 <div id="loader">
   <canvas id="ldr-bg"></canvas>
   <canvas id="rf-canvas"></canvas>
   <div id="ldr-top">
-    <div class="ldr-corner-block">
-      <div class="ldr-corner-label">START</div>
-      <div class="ldr-corner-val">CALISTHENICS</div>
-    </div>
-    <div id="ldr-tr" class="ldr-corner-block" style="align-items:flex-end">
-      <div class="ldr-corner-label" style="text-align:right">WEEK</div>
-      <div class="ldr-corner-val blue" style="text-align:right">W01</div>
-    </div>
+    <div class="ldr-corner-block"><div class="ldr-corner-label">START</div><div class="ldr-corner-val">CALISTHENICS</div></div>
+    <div id="ldr-tr" class="ldr-corner-block"><div class="ldr-corner-label" style="text-align:right">WEEK</div><div class="ldr-corner-val blue" style="text-align:right">W01</div></div>
   </div>
-  
-  <div id="ldr-title">
-    <span class="ldr-big">CALISTHENICS</span>
-    <span class="ldr-big of-word" style="font-size:clamp(40px,13vw,18vw);">OF</span>
-    <span class="ldr-big s-word">S</span>
-  </div>
-  
-  <div id="ldr-left">
-    <span class="ldr-left-line">PUSH PULL</span>
-    <span class="ldr-left-line">EVERY DAY</span>
-    <span class="ldr-left-line blue">STRENGTH</span>
-  </div>
-  
-  <div id="ldr-right">
-    <div class="ldr-right-title">CHALLENGES</div>
-    <div class="ldr-challenge"><span class="ldr-ch-name">PULLUPS</span> <span class="ldr-ch-val">30</span></div>
-    <div class="ldr-challenge"><span class="ldr-ch-name">PUSHUPS</span> <span class="ldr-ch-val">50</span></div>
-    <div class="ldr-right-cta">POWER UP</div>
-  </div>
-  
-  <div id="ldr-bottom">
-    <div class="ldr-bottom-main">
-      <div class="ldr-tagline">CALISTHENICS <span class="ldr-tagline-x">✕</span></div>
-      <div class="ldr-pct"><span id="ldr-pct-val">0</span>%</div>
-    </div>
-    <div class="ldr-prog-bar"><div class="ldr-prog-fill" id="ldr-prog"></div></div>
-    <div class="ldr-bottom-icons">
-      <div class="ldr-icon-item"><div class="ldr-icon-sym">🏋️</div> <div class="ldr-icon-lbl">POWER</div></div>
-      <div class="ldr-icon-item"><div class="ldr-icon-sym">⚡</div> <div class="ldr-icon-lbl">ENERGY</div></div>
-      <div class="ldr-icon-item"><div class="ldr-icon-sym">🔥</div> <div class="ldr-icon-lbl">HEAT</div></div>
-    </div>
-  </div>
-  
-  <div id="ldr-hashtag">
-    <span class="ldr-hash">#CF</span>
-    <span class="ldr-slogan">EXTREME<span class="blue">S</span></span>
-  </div>
-  
-  <div class="rf-c rf-c--tl"></div>
-  <div class="rf-c rf-c--tr"></div>
-  <div class="rf-c rf-c--bl"></div>
-  <div class="rf-c rf-c--br"></div>
+  <div id="ldr-title"><span class="ldr-big">CALISTHENICS</span><span class="ldr-big of-word">OF</span><span class="ldr-big s-word">S</span></div>
+  <div id="ldr-left"><span class="ldr-left-line">PUSH PULL</span><span class="ldr-left-line">EVERY DAY</span><span class="ldr-left-line blue">STRENGTH</span></div>
+  <div id="ldr-right"><div class="ldr-right-title">CHALLENGES</div><div class="ldr-challenge"><span class="ldr-ch-name">PULLUPS</span> <span class="ldr-ch-val">30</span></div><div class="ldr-challenge"><span class="ldr-ch-name">PUSHUPS</span> <span class="ldr-ch-val">50</span></div><div class="ldr-right-cta">POWER UP</div></div>
+  <div id="ldr-bottom"><div class="ldr-bottom-main"><div class="ldr-tagline">CALISTHENICS <span class="ldr-tagline-x">×</span></div><div class="ldr-pct"><span id="ldr-pct-val">0</span>%</div></div><div class="ldr-prog-bar"><div class="ldr-prog-fill" id="ldr-prog"></div></div><div class="ldr-bottom-icons"><div class="ldr-icon-item"><div class="ldr-icon-sym">💪</div> <div class="ldr-icon-lbl">POWER</div></div><div class="ldr-icon-item"><div class="ldr-icon-sym">⚡</div> <div class="ldr-icon-lbl">ENERGY</div></div><div class="ldr-icon-item"><div class="ldr-icon-sym">🔥</div> <div class="ldr-icon-lbl">HEAT</div></div></div></div>
+  <div id="ldr-hashtag"><span class="ldr-hash">#CF</span><span class="ldr-slogan">EXTREME<span class="blue">S</span></span></div>
+  <div class="rf-c rf-c--tl"></div><div class="rf-c rf-c--tr"></div><div class="rf-c rf-c--bl"></div><div class="rf-c rf-c--br"></div>
 </div>
 
-<!-- MAIN APP -->
 <div id="app">
-  <!-- NAV -->
-  <nav id="nav">
-    <span class="nl">CALISTHENICS FLOW</span>
-    <span class="nm">W01</span>
-    <div class="nr">
-      <button class="wb">⚙️</button>
-      <span class="wn">6</span>
-    </div>
-  </nav>
-  
-  <!-- CAR CONTAINER -->
+  <nav id="nav"><span class="nl">CALISTHENICS FLOW</span><span class="nm">W01</span><div class="nr"><button class="wb">⚙️</button><span class="wn">6</span></div></nav>
   <div id="car-container">
-    <div id="car-header">
-      <span class="ch-week">WEEK 01</span>
-      <h1 class="ch-dayname"><span id="dayTitle">MONDAY</span></h1>
-      <span class="ch-subtitle">FULL BODY STRENGTH</span>
-      <div class="ch-meta">
-        <span class="ch-badge">ADVANCED</span>
-        <span class="ch-dur">42 MIN</span>
-      </div>
-    </div>
-    
-    <div id="scene">
-      <canvas id="bg-canvas"></canvas>
-      <canvas id="spotlight"></canvas>
-      <canvas id="trail-canvas"></canvas>
-      <canvas id="particle-canvas"></canvas>
-      <div id="flash"></div>
-      <div id="carousel"></div>
-    </div>
-    
-    <div id="car-footer">
-      <div id="cf-dots"></div>
-      <div id="cf-hint">← SWIPE •••  BROWSE →</div>
-      <div id="cf-stats"></div>
-      <div id="cf-quote"><span id="cf-quote-text">"Train hard, stay humble"</span></div>
-    </div>
+    <div id="car-header"><span class="ch-week">WEEK 01</span><h1 class="ch-dayname"><span id="dayTitle">MONDAY</span></h1><span class="ch-subtitle">FULL BODY STRENGTH</span><div class="ch-meta"><span class="ch-badge">ADVANCED</span><span class="ch-dur">42 MIN</span></div></div>
+    <div id="scene"><canvas id="bg-canvas"></canvas><canvas id="spotlight"></canvas><canvas id="trail-canvas"></canvas><canvas id="particle-canvas"></canvas><div id="flash"></div><div id="carousel"></div></div>
+    <div id="car-footer"><div id="cf-dots"></div><div id="cf-hint">← SWIPE ••• BROWSE →</div><div id="cf-stats"></div><div id="cf-quote"><span id="cf-quote-text">"Train hard, stay humble"</span></div></div>
   </div>
-  
-  <!-- BOTTOM PIPS -->
   <div id="bottom"></div>
   <div id="hint">TAP CARD</div>
   <div id="teleport-flash"></div>
 </div>
 
-<!-- PLAN OVERLAY -->
-<div id="plan-overlay">
-  <div id="plan-backdrop"></div>
-  <div id="plan-sheet">
-    <aside id="plan-sidebar">
-      <div class="ps-logo">CF</div>
-      <nav class="ps-nav" id="ps-nav"></nav>
-      <div class="ps-bottom">
-        <div class="ps-theme-icon">🌙</div>
-        <div class="ps-theme-lbl">THEME</div>
-      </div>
-    </aside>
-    <main id="plan-main">
-      <div id="plan-topbar">
-        <span class="ptb-title">TRAINING PLAN</span>
-        <div class="ptb-week">
-          <button class="ptb-wbtn">‹</button>
-          <span id="ptb-wnum" class="wnum">01</span>
-          <button class="ptb-wbtn">›</button>
-        </div>
-        <button id="plan-close-btn">✕</button>
-      </div>
-      <div id="plan-content"></div>
-    </main>
-  </div>
-</div>
+<div id="plan-overlay"><div id="plan-backdrop"></div><div id="plan-sheet"><aside id="plan-sidebar"><div class="ps-logo">CF</div><nav class="ps-nav" id="ps-nav"></nav><div class="ps-bottom"><div class="ps-theme-icon">🌙</div><div class="ps-theme-lbl">THEME</div></div></aside><main id="plan-main"><div id="plan-topbar"><span class="ptb-title">TRAINING PLAN</span><div class="ptb-week"><button class="ptb-wbtn">‹</button><span id="ptb-wnum">01</span><button class="ptb-wbtn">›</button></div><button id="plan-close-btn">×</button></div><div id="plan-content"></div></main></div></div>
 
-<!-- EXERCISE DETAIL -->
-<div id="ex-overlay">
-  <div id="ex-card">
-    <div class="ex-card-handle"></div>
-    <div class="ex-card-scroll">
-      <div class="ex-card-header">
-        <div>
-          <div class="ex-card-num">EXERCISE</div>
-          <h2 class="ex-card-name" id="ex-name">PULLUPS</h2>
-          <div class="ex-card-muscles" id="ex-muscles">BACK, BICEPS</div>
-        </div>
-        <button class="ex-card-close">✕</button>
-      </div>
-      <div class="ex-stats-row" id="ex-stats"></div>
-      <div class="ex-desc-block">
-        <div class="ex-desc-title">DESCRIPTION</div>
-        <div class="ex-desc-text" id="ex-desc"></div>
-      </div>
-      <div class="ex-tips-block" id="ex-tips-block"></div>
-      <div class="ex-muscle-block" id="ex-muscle-block"></div>
-      <div class="ex-done-section">
-        <button class="ex-done-btn" id="ex-done-btn">MARK AS DONE</button>
-        <div class="ex-progress-note" id="ex-progress-note"></div>
-      </div>
-    </div>
-  </div>
-</div>
+<div id="ex-overlay"><div id="ex-card"><div class="ex-card-handle"></div><div class="ex-card-scroll"><div class="ex-card-header"><div><div class="ex-card-name" id="ex-name">PULLUPS</div></div><button class="ex-card-close">×</button></div></div></div></div>
 
 <script src="script.js"></script>
 </body>
